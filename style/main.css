@@ -1,0 +1,321 @@
+/* ====================== */
+/* General */
+/* ====================== */
+
+/* clear out browser's default settings */
+html, body, h1, h2, h3, h4, p, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+
+body {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	color: #888;
+}
+
+h1,h2,h3,h4,h5 {font-weight: 200;}
+a:focus {outline: none;}
+a, a:hover {text-decoration: none}
+p {	line-height: 2;}
+
+
+.container {
+	width: 55%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ====================== */
+/* Show Content Button    */
+/* ====================== */
+
+#all-content {
+	display:none;
+}
+
+#show {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 200px;
+	padding: 20px 50px;
+	font-size: 14px;
+}
+
+/* ====================== */
+/* Navigation Bar*/
+/* ====================== */
+
+nav {
+	
+	padding: 8px 20px 8px 10px;
+	background-color: rgba(255,255,255,1);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: 0px 0px 5px #888888;
+}
+
+.navbar-name {
+	float: left;
+	padding-left: 20px;
+}
+
+.navbar-name li {
+	display: inline;
+}
+
+.navbar-name a {
+	font-weight: 500;
+	font-size: 40px; 
+	color: #444; 
+	font-family: 'Bangers', cursive;
+	text-decoration: none;
+}
+
+.navbar-right {
+	float: right;
+	padding-top: 15px;
+	padding-right: 20px;
+}
+
+.navbar-right li {
+	display: inline;
+	padding-right: 10px;
+}
+
+.navbar-right a {
+	text-decoration: none;
+	font-size: 16px; 
+	color: #444;
+	transition: all 0.1s ease-in;
+	padding: 5px 15px;
+}
+
+.navbar-right a:hover {
+	color: #fff;
+	background-color: #777;
+	border-radius: 3px;
+}
+
+/* ====================== */
+/* About Section */
+/* ====================== */
+#about {
+	background-color: #222;
+	padding-top: 90px;
+	color: #EDEDED;
+	text-align: center;
+}
+
+#about .name {
+	font-family: 'Bangers', cursive;
+	font-size: 60px;
+	padding-top: 40px;
+}
+
+.social-media, .social-media li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.linkedin, .facebook, .rss {
+	background-image: url('../socialmedia.svg');
+	border-radius: 5px;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	display: block;
+	margin: 10px 5px;
+}
+
+.linkedin:hover {
+	background-position: 0 32px;
+}
+
+.facebook {
+	background-position: -32px 0;
+}
+
+.facebook:hover {
+	background-position: -32px -32px;
+}
+
+.rss {
+	background-position: -64px 0;
+}
+
+.rss:hover {
+	background-position: -64px -32px;
+} 
+
+/* #about .contact, .contact a {
+	font-size: 15px;
+	letter-spacing: 3px;
+	color: #EDEDED;
+}
+
+.contact a:hover {
+	display: inline-block;
+	-ms-transform: skewX(-15deg); 
+    -webkit-transform: skewX(-15deg); 
+    transform: skewX(-15deg); 
+} */
+
+.objective {
+	padding: 40px 50px 90px 50px;
+	line-height: 1.3;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+
+.profile-pic {
+	display: block;
+	margin: 20px auto 0 auto;
+	border: 0px solid #fff;
+	border-radius: 50%;
+}
+
+/* ====================== */
+/* Education Section */
+/* ====================== */
+#education {
+	background-color: #fff;
+	color: #222;
+	padding-top: 50px;
+	padding-bottom: 90px;
+	text-align: center;
+}
+
+.master {
+	text-align: center;
+	display: inline-block;
+	padding-left: 50px;
+}
+
+.bachelor {
+	text-align: center;
+	display: inline-block;
+	padding-right: 50px;
+}
+
+.education_title {
+	font-size: 50px;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	line-height: 50px;
+}
+
+#education h2 {
+	font-size: 22px;
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
+
+/* =================================== */
+/* Professional Experience Section */
+/* =================================== */
+
+#professional {
+	background-color: #222;
+	padding: 60px 50px 60px 50px;
+	color: #EDEDED;	
+}
+
+.professional_title {
+	font-size: 50px;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	line-height: 60px;
+}
+
+#professional h2 {
+	font-size: 22px;
+	padding-bottom: 5px;
+}
+
+#professional h3 {
+	font-size: 18px;
+	font-weight: 400;
+	padding-bottom: 8px;
+}
+
+.job-title {
+	float: left;
+}
+
+.job-dates {
+	display: inline;
+	float: right;
+}
+
+.job-description {
+	clear: both;
+	font-size: 16px;
+	padding-bottom: 30px;
+}
+
+.job-description li {
+	padding-bottom: 5px;
+}
+
+/* =================================== */
+/* Volunteering Experience Section */
+/* =================================== */
+
+#volunteer {
+	background-color: #fff;
+	padding-bottom: 100px;
+	padding-top: 40px;
+	color: #222;
+}
+
+.volunteer_title {
+	font-size: 50px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	line-height: 60px;
+}
+
+#volunteer h2 {
+	clear: both;
+	
+}
+
+#volunteer h3 {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+
+/* =================================== */
+/* footer */
+/* =================================== */
+
+footer {
+	background-color: #222;
+	padding-top: 40px;
+	text-align: center;
+	padding-bottom: 50px;
+	font-size: 16px;
+}
+
+footer a {
+	color: #999;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #fff;
+}
